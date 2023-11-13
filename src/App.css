@@ -19,7 +19,9 @@ li {
   position: fixed;
   left:50%;
   top:50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
+  /* margin-left: -150px; */
+  /* margin-top: -150px; */
   background: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -27,8 +29,52 @@ li {
   height: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
-  .myP {
-    color: #f00;
-    background-color: skyblue;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.myP {
+  color: #f00;
+  background-color: skyblue;
+}
+
+.tab > ul {
+  display: flex;
+}
+
+.tab > ul > li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0 ;
+  border: 1px solid #000;
+  border-right: 0 none;
+}
+
+.tab > ul > li:last-child{
+  border-right: 1px solid #000;
+}
+
+.tab > ul > li.active {
+  background: skyblue;
+  border-bottom: 0;
+}
+
+.lists > li{
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.lists > li:hover{
+  background: skyblue;
+}
+
+.btnWrap {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.btnWrap button {
+  padding: 5px 15px;
 }
