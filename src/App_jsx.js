@@ -1,16 +1,22 @@
-import logo from './logo.svg';
-import { useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-function App() {
-  let data = "안녕하세요"
-  let [listData,setListData] = useState(1)
+// Import Swiper styles
+import 'swiper/css';
 
+export default () => {
   return (
-    <div>
-      <div>{listData}</div>
-      <button onClick={()=>{setListData(listData+1)}}>click</button>
-    </div>
+    <Swiper
+      spaceBetween={50}
+      slidesPerView={3}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide>Slide 1</SwiperSlide>
+      <SwiperSlide>Slide 2</SwiperSlide>
+      <SwiperSlide>Slide 3</SwiperSlide>
+      <SwiperSlide>Slide 4</SwiperSlide>
+      ...
+    </Swiper>
   );
-}
-
-export default App;
+};
