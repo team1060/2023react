@@ -78,3 +78,77 @@ li {
 .btnWrap button {
   padding: 5px 15px;
 }
+
+.avata {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avata img {
+  width: 100%;
+}
+
+.visualWrap{
+  background: #888;
+}
+
+.contentWrap01 {
+  background: papayawhip;
+}
+.title {
+  /* position: relative; */
+}
+
+.title:after{
+  content:'';
+  width: 20rem;
+  height: 1px;
+  display: block;
+  background-color: #000;
+  margin: 0 auto;
+  /* position: absolute; */
+}
+
+.card {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: translate(-10px,-10px);
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
+  
+}
+
+.icon {
+  width: 70px;
+  height : 70px;
+  background: #832222;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner img {
+  position: absolute;
+}
+
+.banner img:nth-child(1) {
+  width: 100%;
+}
+
+.banWrap {
+  background-image: url(./assets/img/bannerBg01.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
